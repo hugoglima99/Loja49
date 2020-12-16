@@ -12,7 +12,8 @@ namespace Loja49.Dados.Entidades
 
         public string Nome { get; set; }
 
-        [DisplayFormat(DataFormatString = "{o:C2}", ApplyFormatInEditMode = false)]
+        [Display(Name = "Preço")]
+        [DisplayFormat(DataFormatString = "{0:C2}", ApplyFormatInEditMode = false)]
         public decimal Preco { get; set; }
 
         [Display(Name = "Image")]
@@ -27,7 +28,7 @@ namespace Loja49.Dados.Entidades
         [Display(Name = "Disponível")]
         public bool Disponivel { get; set; }
 
-        [DisplayFormat(DataFormatString = "{o:N2}", ApplyFormatInEditMode = false)]
+        [DisplayFormat(DataFormatString = "{0:N2}", ApplyFormatInEditMode = false)]
         public double Stock { get; set; }
 
 
