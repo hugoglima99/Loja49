@@ -6,6 +6,8 @@ namespace Loja49.Dados
     public class DataContext : DbContext
 
     {
+        public DbSet<Clientes> Clientes { get; set; }
+
         public DbSet<Produto> Produtos { get; set; }
 
 
